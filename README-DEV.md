@@ -3,7 +3,7 @@
 
 Pre-requisites:
 
- - Node.js >=8.3.0
+ - Node.js >=8.5.0
  - [PostgreSQL](https://www.postgresql.org/) >=9.6 ([postgresapp](http://postgresapp.com/) on a mac)
  - [Redis](https://redis.io/) (`brew install redis` on mac `redis-server` to start)
  - SMTP server (like [mailcatcher](https://mailcatcher.me/): `brew install ruby` – restart terminal – `gem install mailcatcher` then `mailcatcher`)
