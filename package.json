@@ -195,7 +195,8 @@
     "sync-s3": "node ./bin/s3-sync.js",
     "tape": "tape './tests/functional/*.js' | faucet",
     "test-back": "npm run tape",
-    "toc": "gulp toc"
+    "toc": "gulp toc",
+    "heroku-postbuild": "npm run build"
   },
   "engines": {
     "node": "8.5.0",
