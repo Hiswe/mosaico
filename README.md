@@ -69,3 +69,4 @@ NB: Internally, we use [rc](https://www.npmjs.com/package/rc).
 Heroku uses 2. environment [config vars](https://devcenter.heroku.com/articles/config-vars#setting-up-config-vars-for-a-deployed-application) that will take precedence over our defaults:
 ![heroku-config-vars](http://imgur.com/download/DAw55D3)
 
+
