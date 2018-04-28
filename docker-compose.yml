@@ -1,0 +1,33 @@
+version: "2"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+#      - NODE_ENV=development
+      - backend_database=postgres://postgres:5432/mosaico-backend
+      - backend_redis=redis://redis:6379
+    volumes:
+      - .:/app/user
+    working_dir: /app/user
+    command: bash -c 'npm start'
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+      - redis
+      - mailcatcher
+  postgres:
+    image: postgres:9.6.1
+    ports:
+      - "5432:5432"
+  redis:
+    image: redis:3.2.4
+    ports:
+      - "6379:6379"
+  mailcatcher:
+    image: djfarrelly/maildev
+    ports:
+      - "1025:25"
+      - "1080:80"

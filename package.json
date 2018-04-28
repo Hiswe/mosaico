@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/Hiswe/mosaico-backend.git"
   },
+  "config": {
+    "libvips": "7.42.3"
+  },
   "contributors": [
     "Stefano Bagnara",
     "Yannick Aivayan <yannick@goodenough.agency> (https://github.com/hiswe)"
