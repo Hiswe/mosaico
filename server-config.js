@@ -2,7 +2,7 @@
 module.exports = {
 	emailTransport: {
 		host: "mail.monarchalpha.com",
-		port: 26,
+		port: 143,
 		auth: {user: "monarch@monarchalpha.com", pass: "fuv2iw*K4M~W"}
 	},
 	emailOptions: {
