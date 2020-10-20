@@ -1,12 +1,12 @@
 // Put here your email sending configurations!
 module.exports = {
 	emailTransport: {
-		// host: 'yoursmtpserver',
-		// port: 25,
-		// auth: { user: '####', pass: '####' }
+		host: 'mail.monarchalpha.com',
+		port: 465,
+		auth: { user: 'monarch', pass: 'fuv2iw*K4M~W' }
 	},
 	emailOptions: {
-		from: 'Mosaico by VOXmail <test@mosaico.io>', // sender address
+		from: 'Monarch <monarch@monarchalpha.com>', // sender address
 		// bcc: 'mosaico@mosaico.io',
 	}
 };
