@@ -605,14 +605,14 @@ module.exports = _ => {
 
   //----- WAIT FOR MAIN EXTERNAL SERVICES BEFORE BOOTING
 
-  config.setup.then(async _ => {
-    try {
-      await mail.status()
-      console.log(c.green('[EMAIL] transport mailing – SUCCESS'))
-    } catch (err) {
-      console.log(c.red('[EMAIL] transport mailing – ERROR'))
-      return stopApplication(new Error('[EMAIL] transport mailing – ERROR'))
-    }
+//  config.setup.then(async _ => {
+//    try {
+//      await mail.status()
+//      console.log(c.green('[EMAIL] transport mailing – SUCCESS'))
+//    } catch (err) {
+//      console.log(c.red('[EMAIL] transport mailing – ERROR'))
+//      return stopApplication(new Error('[EMAIL] transport mailing – ERROR'))
+//    }
 
     try {
       await redis.ping()
