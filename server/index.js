@@ -614,13 +614,13 @@ module.exports = _ => {
 //      return stopApplication(new Error('[EMAIL] transport mailing – ERROR'))
 //    }
 
-    try {
-      await redis.ping()
-      console.log(c.green('[REDIS] connection – SUCCESS'))
-    } catch (err) {
-      console.log(c.red('[REDIS] connection – ERROR'))
-      return stopApplication(new Error('[REDIS] connection – ERROR'), { mail })
-    }
+//    try {
+//      await redis.ping()
+//      console.log(c.green('[REDIS] connection – SUCCESS'))
+//    } catch (err) {
+//      console.log(c.red('[REDIS] connection – ERROR'))
+//      return stopApplication(new Error('[REDIS] connection – ERROR'), { mail })
+//    }
 
     try {
       await sequelize.authenticate()
