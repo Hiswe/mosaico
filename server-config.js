@@ -1,12 +1,12 @@
 // Put here your email sending configurations!
 module.exports = {
 	emailTransport: {
-		host: "mail.monarchalpha.com",
-		port: 143,
-		auth: {user: "monarch@monarchalpha.com", pass: "fuv2iw*K4M~W"}
+		host: "smtp.gmail.com",
+		port: 465,
+		auth: {user: "studiocoma.be@gmail.com", pass: "Qf7g4tMtG3Q&"}
 	},
 	emailOptions: {
-		from: "Monarch <monarch@monarchalpha.com>", // sender address
-		bcc: "monarch@monarchalpha.com>o",
+		from: "Carri <studiocoma.be@gmail.com>", // sender address
+		bcc: "studiocoma.be@gmail.com",
 	}
 };
